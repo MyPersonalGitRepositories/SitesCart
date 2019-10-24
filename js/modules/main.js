@@ -38,27 +38,9 @@ var app = (function($) {
             catalog.init();
             cart.init(optionsCatalog);
         }
-        if (page === 'catalogDB') {
-            catalogDB.init();
-            cart.init(optionsCatalog);
-            compare.init();
-        }
-        if (page === 'catalogPag') {
-            catalogPag.init();
-            cart.init(optionsCatalog);
-        }
-        if (page === 'compare') {
-            cart.init(optionsCatalog);
-            compare.init();
-        }
         if (page === 'cart') {
             cart.init(optionsCart);
         }
-        if (page === 'order') {
-            order.init();
-            cart.init(optionsOrder);
-        }
-        compare.updateCompareTab();
     }
     
     return {
