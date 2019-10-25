@@ -11,7 +11,8 @@ $('#btn').on('click', showModal);
 function showModal() {
     $('#myModalBox').modal()
 }
-'use strict';
+
+// 'use strict';
 // Модуль корзины
 var cart = (function($) {
 
@@ -185,6 +186,7 @@ var cart = (function($) {
             });
             renderMenuCart();
             alert('Товар добавлен в корзину');
+            // TODO DELETE ALERT
         });
     }
 

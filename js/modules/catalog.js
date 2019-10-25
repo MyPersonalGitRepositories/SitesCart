@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 // Модуль каталога
 var catalog = (function($) {
@@ -17,7 +17,6 @@ var catalog = (function($) {
             $goods.html(template({goods: data}));
         });
     }
-
 
     // Экспортируем наружу
     return {

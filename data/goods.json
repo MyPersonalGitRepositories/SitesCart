@@ -1,32 +1,44 @@
 [
     {
         "id": "1",
-        "name": "Ноутбук Lenovo",
-        "price": "18000",
-        "img": "img/cars/notebook_lenovo.jpg"
+        "name": "Smart-watch",
+        "price": "11200",
+        "old-price": "21400",
+        "img": "img/item.jpg"
     },
     {
         "id": "2",
-        "name": "Фотокамера Nikon",
-        "price": "25000",
-        "img": "img/cars/camera_nikon.jpg"
+        "name": "Smart-watch",
+        "price": "8800",
+        "old-price": "",
+        "img": "img/item.jpg"
     },
     {
         "id": "3",
-        "name": "Apple ipad",
-        "price": "35000",
-        "img": "img/cars/ipad.jpg"
+        "name": "Smart-watch",
+        "price": "3599",
+        "old-price": "6549",
+        "img": "img/item.jpg"
     },
     {
         "id": "4",
-        "name": "Samsung Galaxy",
-        "price": "20000",
-        "img": "img/cars/phone_galaxy.jpg"
+        "name": "Smart-watch",
+        "price": "7990",
+        "old-price": "",
+        "img": "img/item.jpg"
     },
     {
         "id": "5",
-        "name": "Телевизор SUPRA",
-        "price": "19000",
-        "img": "img/cars/tv_supra.jpg"
+        "name": "Smart-watch",
+        "price": "8900",
+        "old-price": "9999",
+        "img": "img/item.jpg"
+    },
+    {
+        "id": "6",
+        "name": "Smart-watch",
+        "price": "4999",
+        "old-price": "",
+        "img": "img/item.jpg"
     }
 ]

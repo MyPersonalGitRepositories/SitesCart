@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 // Модуль приложения
 var app = (function($) {
