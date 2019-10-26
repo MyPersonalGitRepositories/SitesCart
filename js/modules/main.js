@@ -1,6 +1,3 @@
-// 'use strict';
-
-// Модуль приложения
 var app = (function($) {
 
     var $body = $('body'),
@@ -30,16 +27,9 @@ var app = (function($) {
         }, options);
 
     function init() {
-        if (page === 'catalog') {
-            catalog.init();
-
-            cart.init(optionsCatalog);
-            cart.init(optionsCart);
-
-        }
-        // if (page === 'catalog') {
-        //     cart.init(optionsCart);
-        // }
+        catalog.init();
+        // cart.init(optionsCatalog);
+        cart.init(optionsCart);
     }
     
     return {

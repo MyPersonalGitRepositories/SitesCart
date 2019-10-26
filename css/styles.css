@@ -2,23 +2,28 @@
     position: relative;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
 body {
     background: url("../img/back.jpg");
 
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
 }
 a {
     color: black;
     text-decoration: none;
 }
-/* Каталог товаров */
-/*TODO CHANGE ITEMS STYLE*/
-/*.good-item {*/
-/*    margin: 10px 0;*/
-/*    padding: 20px;*/
-/*    border: solid 1px gray;*/
-/*    border-radius: 3px;*/
-/*}*/
-
 .good-item__id {
     padding-top: 30px;
     color: steelblue;
@@ -26,7 +31,7 @@ a {
 
 .good-item__name {
     padding-top: 10px;
-    font-size: 1.1em;
+    font-size: 1.7em;
 }
 
 .good-item__price {
@@ -37,8 +42,6 @@ a {
 .good-item__btn-add {
     margin-top: 30px;
 }
-
-/* Корзина */
 
 .cart-item__btn-dec-count {
     margin-right: 10px;
@@ -54,20 +57,19 @@ a {
     cursor: pointer;
 }
 
-/*.slider-container {*/
-/*    padding-top: 75px;*/
-/*    width: 50%;*/
-/*    margin: auto;*/
-/*    margin-top: 15px;*/
-/*    margin-bottom: 15px;*/
-/*    text-align: center;*/
-/*}*/
-/*.slider img {*/
-/*    text-align: center;*/
-/*    margin: 15px auto 10px;*/
-/*    width: 50%;*/
-/*    height: 50%;*/
-/*}*/
+.slider-container {
+    padding-top: 75px;
+    width: 50%;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.slider img {
+    text-align: center;
+    margin: 15px auto 10px;
+    width: 50%;
+    height: 50%;
+}
 .navbar-brand {
     padding-top: 25px;
 }
@@ -278,14 +280,12 @@ del {
     }
 
     .item {
-        /*margin-top: 20px;*/
-        /*margin-bottom: 20px;*/
         margin: 20px;
         overflow: hidden;
     }
 
-    .navbar-brand h1 { /* Restaurant name */
-        font-size: 5vw; /* 1vw = 1% of viewport width */
+    .navbar-brand h1 {
+        font-size: 5vw;
     }
 
     #collapsable-nav a {
@@ -300,30 +300,28 @@ del {
 }
 
 .modal {
-    position: fixed; /* фиксированное положение */
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5); /* цвет фона */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1050;
-    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    opacity: 0;
     -webkit-transition: opacity 200ms ease-in;
     -moz-transition: opacity 200ms ease-in;
-    transition: opacity 200ms ease-in; /* анимация перехода */
-    pointer-events: none; /* элемент невидим для событий мыши */
+    transition: opacity 200ms ease-in;
+    pointer-events: none;
     margin: 0;
     padding: 0;
 }
 
-/* при отображении модального окно */
 .modal:target {
-    opacity: 1; /* делаем окно видимым */
-    pointer-events: auto; /* элемент видим для событий мыши */
-    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+    opacity: 1;
+    pointer-events: auto;
+    overflow-y: auto;
 }
 
-/* ширина модального окна и его отступы от экрана */
 .modal-dialog {
     position: relative;
     width: auto;
@@ -333,11 +331,10 @@ del {
 @media (min-width: 576px) {
     .modal-dialog {
         max-width: 500px;
-        margin: 30px auto; /* для отображения модального окна по центру */
+        margin: 30px auto;
     }
 }
 
-/* свойства для блока, содержащего контент модального окна */
 .modal-content {
     position: relative;
     display: -webkit-box;
@@ -364,7 +361,6 @@ del {
     }
 }
 
-/* свойства для заголовка модального окна */
 .modal-header {
     display: -webkit-box;
     display: -webkit-flex;
@@ -390,7 +386,6 @@ del {
     font-weight: 500;
 }
 
-/* свойства для кнопки "Закрыть" */
 .close {
     float: right;
     font-family: sans-serif;
@@ -403,7 +398,6 @@ del {
     text-decoration: none;
 }
 
-/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
 .close:focus, .close:hover {
     color: #000;
     text-decoration: none;
@@ -411,7 +405,6 @@ del {
     opacity: .75;
 }
 
-/* свойства для блока, содержащего основное содержимое окна */
 .modal-body {
     position: relative;
     -webkit-box-flex: 1;
