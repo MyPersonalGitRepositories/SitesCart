@@ -27,20 +27,19 @@ var app = (function($) {
         optionsCart = _.extend({
             renderCartOnInit: true,
             renderMenuCartOnInit: true
-        }, options),
-        optionsOrder = _.extend({
-            renderCartOnInit: false,
-            renderMenuCartOnInit: true
         }, options);
 
     function init() {
         if (page === 'catalog') {
             catalog.init();
+
             cart.init(optionsCatalog);
-        }
-        if (page === 'cart') {
             cart.init(optionsCart);
+
         }
+        // if (page === 'catalog') {
+        //     cart.init(optionsCart);
+        // }
     }
     
     return {

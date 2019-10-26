@@ -9,7 +9,7 @@ $(function () {
 $('#btn').on('click', showModal);
 
 function showModal() {
-    $('#myModalBox').modal()
+    $('#myModalBox').modal();
 }
 
 // 'use strict';
@@ -212,7 +212,7 @@ var cart = (function($) {
     // Удаляем товар из корзине
     function _onClickRemoveFromCart() {
         $('body').on('click', opts.elRemoveFromCart, function(e) {
-            if(!confirm('Удалить товар из корзины?')) return false;
+            if (!confirm('Are You sure You want to delete this item?')) return false;
             var $this = $(this),
                 id = +$this.attr(opts.attrId),
                 $cartElem = findCartElemById(id);
