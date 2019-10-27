@@ -1,4 +1,3 @@
-var bool = false;
 $(function () {
     $("#navbarToggle").blur(function (event) {
         var screenWidth = window.innerWidth;

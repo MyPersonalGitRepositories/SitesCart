@@ -40,5 +40,12 @@
         "price": "4999",
         "old-price": "",
         "img": "img/item.jpg"
+    },
+  {
+    "id": "7",
+    "name": "Smart-watch",
+    "price": "5899",
+    "old-price": "",
+    "img": "img/item.jpg"
     }
 ]
